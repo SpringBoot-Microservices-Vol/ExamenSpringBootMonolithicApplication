@@ -1,0 +1,4 @@
+#Ignore files
+.idea/
+target/
+server.iml

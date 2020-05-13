@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.3.1.final using JasperReports Library version 6.8.1-3d4b87119c827be13776e451fb3738062f84a87d  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d5317527-8f95-4c85-80e6-5d592f48ac5b">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="candidate" class="com.sergiu.entity.Candidate"/>
+	<field name="testGrade" class="java.lang.Double"/>
+	<field name="finalGrade" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="270" height="77" uuid="9bf2b087-98c7-4813-928d-2d7a1bb7e4a8"/>
+				<textElement textAlignment="Left">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" UNIVERSITATEA ALEXANDRU IOAN CUZA  IASI \n FACULTATEA DE INFORMATICA \n CONCURS DE ADMITERE\n SESIUNEA IULIE 2020 \n Afisat: " + new SimpleDateFormat("dd.MM.yyyy").format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="221" y="58" width="112" height="19" uuid="b019e733-523a-49ce-8cc6-6d60602effcc"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LISTA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="20" width="100" height="30" uuid="906efb76-b23c-4ed9-8650-ce9737c5b6ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[L6]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="-2" y="4" width="559" height="15" uuid="b0d9c1e7-1213-4649-bebc-40617316890c"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[candidatilor declarati admisi pe locurile cu taxa - limba engleza]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="37" splitType="Stretch">
+			<staticText>
+				<reportElement x="29" y="10" width="51" height="26" uuid="70fe0991-3432-4f10-a8d8-b439e6f349c3"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nr. crt.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="10" width="130" height="26" uuid="9ebcc4a7-fd8b-43a1-9163-1b097995145b"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prenume]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="10" width="116" height="26" uuid="fbefa5b3-7c52-428c-9edf-c2129202c59e"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nume]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="327" y="10" width="56" height="26" uuid="0fe9de75-cb69-41c7-b092-d04202019151"/>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nr. leg.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="487" y="10" width="40" height="26" uuid="4abded93-6ff7-48d5-b1f3-2da0cd176590"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Media]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="10" width="52" height="26" uuid="b7aa1319-afe1-48a4-9a9c-d39ec28aa1b5"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nota scris 22.07]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="10" width="52" height="26" uuid="78854d62-3d37-4072-8fee-264f2bdab34b"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nota scris]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="29" y="-1" width="51" height="25" uuid="b178e57d-3c0a-4ced-a9c4-b0b5a0c9b584"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="-1" width="116" height="25" uuid="bce52bb3-a5fd-48a2-aea9-4296a802ff21"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{candidate}.getLastName()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="196" y="-1" width="131" height="25" uuid="62667f8b-d06b-4b17-a263-6ca0fedefc5a"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{candidate}.getFirstName()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="327" y="-1" width="56" height="25" uuid="5c0695f1-3706-4fcd-a130-397f1fe4303c"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Nimic"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="487" y="-1" width="40" height="25" uuid="ae4e858d-919b-421d-bfe7-d3f0edcc7518"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{finalGrade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="383" y="-1" width="52" height="25" uuid="779eeebc-17a8-408e-b58d-502118a9b669"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{testGrade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="-1" width="52" height="25" uuid="8b869c9c-dc30-4ed7-8530-f8ce4efd967d"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{testGrade}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="50">
+			<staticText>
+				<reportElement x="444" y="0" width="100" height="30" uuid="86bab07e-df32-425f-b6d5-12c96c80b6fb"/>
+				<text><![CDATA[Decan,
+Conf. dr. Adrian Iftene]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="0" width="100" height="30" uuid="223a7af3-b461-406c-89d6-c163841ab97a"/>
+				<text><![CDATA[Rector,
+Prof. dr. Tudorel Toader]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="51" splitType="Stretch"/>
+	</summary>
+</jasperReport>

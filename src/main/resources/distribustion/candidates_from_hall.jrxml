@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.3.1.final using JasperReports Library version 6.8.1-3d4b87119c827be13776e451fb3738062f84a87d  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d5317527-8f95-4c85-80e6-5d592f48ac5b">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="hall" class="com.sergiu.entity.Hall"/>
+	<field name="category" class="com.sergiu.entity.Category"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="119" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="0" width="270" height="58" uuid="f2c1129a-11fc-4d06-a42e-41e272e6a54f"/>
+				<textElement textAlignment="Left">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[UNIVERSITATEA "ALEXANDRU IOAN CUZA" IASI
+FACULTATEA DE INFORMATICA
+CONCURS DE ADMITERE
+SESIUNEA IULIE 2020]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="58" width="129" height="19" uuid="b019e733-523a-49ce-8cc6-6d60602effcc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LISTA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="82" y="77" width="390" height="42" uuid="bf13c692-2aa1-47b9-9d4b-b39c14e0b202"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CANDIDATILOR REPARTIZATI IN SALA "+$F{hall}.getName()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="22">
+			<staticText>
+				<reportElement x="30" y="3" width="49" height="19" uuid="75fd8c50-350e-4f53-994e-5ab19d8efdc5">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nr. loc]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="3" width="130" height="19" uuid="50f3d5bf-2b25-441f-a410-33936bb310ef">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prenume]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="3" width="152" height="19" uuid="a5a82381-9608-467f-8f59-ca60cd0d4084">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nume]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="3" width="70" height="19" uuid="f3710573-b02e-4b31-bb50-6262be704f86">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nr. leg.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="3" width="100" height="19" uuid="acc0d939-f799-4ced-a1eb-b4671f3a5f3e">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER}==1]]></printWhenExpression>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teza]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="30" y="0" width="49" height="25" uuid="b178e57d-3c0a-4ced-a9c4-b0b5a0c9b584"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="79" y="0" width="152" height="25" uuid="bce52bb3-a5fd-48a2-aea9-4296a802ff21"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lastName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="231" y="0" width="130" height="25" uuid="62667f8b-d06b-4b17-a263-6ca0fedefc5a"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="0" width="70" height="25" uuid="5c0695f1-3706-4fcd-a130-397f1fe4303c"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA["-"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="431" y="0" width="100" height="25" uuid="f379ea79-3ef3-4096-891a-d3b940ab2725"/>
+				<box padding="0">
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{category}.getName()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<lastPageFooter>
+		<band height="50">
+			<staticText>
+				<reportElement x="444" y="0" width="100" height="30" uuid="86bab07e-df32-425f-b6d5-12c96c80b6fb"/>
+				<text><![CDATA[Decan,
+Conf. dr. Adrian Iftene]]></text>
+			</staticText>
+		</band>
+	</lastPageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

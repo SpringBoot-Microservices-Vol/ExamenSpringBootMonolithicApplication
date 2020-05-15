@@ -2,3 +2,6 @@
 .idea/
 target/
 server.iml
+.classpath
+.project
+.settings/
